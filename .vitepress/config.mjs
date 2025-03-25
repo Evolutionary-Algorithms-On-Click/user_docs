@@ -94,6 +94,10 @@ export default defineConfig({
         logo: "/logo.png",
         logoLink: "/",
         repo: "Evolutionary-Algorithms-On-Click/user_docs",
+        search: {
+            provider: "local",
+            placeholder: "Search",
+        },
         nav: [
             { text: "Home", link: "/" },
             { text: "Get Started", link: "/get-started" },
