@@ -1,6 +1,7 @@
 import { defineConfig } from "vitepress";
 
 export default defineConfig({
+    base: "/user_docs/",
     ignoreDeadLinks: true,
     title: "EvOC Docs",
     description: "Documentation for Evolutionary Algorithms On Click (EvOC)",
