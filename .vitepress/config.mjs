@@ -6,14 +6,14 @@ export default defineConfig({
     title: "EvOC Docs",
     description: "Documentation for Evolutionary Algorithms On Click (EvOC)",
     head: [
-        ["link", { rel: "shortcut icon", href: "/logo.ico" }],
+        ["link", { rel: "shortcut icon", href: "/user_docs/logo.ico" }],
         [
             "link",
             {
                 rel: "icon",
                 type: "image/png",
                 sizes: "32x32",
-                href: "/logo.png",
+                href: "/user_docs/logo.png",
             },
         ],
         [
@@ -22,14 +22,21 @@ export default defineConfig({
                 rel: "icon",
                 type: "image/png",
                 sizes: "16x16",
-                href: "/logo.png",
+                href: "/user_docs/logo.png",
             },
         ],
         [
             "link",
-            { rel: "apple-touch-icon", sizes: "180x180", href: "/logo.png" },
+            {
+                rel: "apple-touch-icon",
+                sizes: "180x180",
+                href: "/user_docs/logo.png",
+            },
         ],
-        ["link", { rel: "mask-icon", href: "/logo.svg", color: "#3eaf7c" }],
+        [
+            "link",
+            { rel: "mask-icon", href: "/user_docs/logo.png", color: "#3eaf7c" },
+        ],
         ["meta", { name: "theme-color", content: "#3eaf7c" }],
         ["meta", { name: "mobile-web-app-capable", content: "yes" }],
         ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
@@ -38,10 +45,9 @@ export default defineConfig({
             { name: "apple-mobile-web-app-status-bar-style", content: "black" },
         ],
         ["meta", { name: "msapplication-TileColor", content: "#000000" }],
-        ["meta", { name: "msapplication-TileImage", content: "/logo.png" }],
         [
             "meta",
-            { name: "msapplication-config", content: "/browserconfig.xml" },
+            { name: "msapplication-TileImage", content: "/user_docs/logo.png" },
         ],
         [
             "meta",
@@ -67,7 +73,7 @@ export default defineConfig({
                     "Documentation for Evolutionary Algorithms On Click (EvOC)",
             },
         ],
-        ["meta", { property: "og:image", content: "/logo.png" }],
+        ["meta", { property: "og:image", content: "/user_docs/logo.png" }],
         [
             "meta",
             {
@@ -89,10 +95,10 @@ export default defineConfig({
                     "Documentation for Evolutionary Algorithms On Click (EvOC)",
             },
         ],
-        ["meta", { name: "twitter:image", content: "/logo.png" }],
+        ["meta", { name: "twitter:image", content: "/user_docs/logo.png" }],
     ],
     themeConfig: {
-        logo: "/logo.png",
+        logo: "/user_docs/logo.png",
         logoLink: "/",
         repo: "Evolutionary-Algorithms-On-Click/user_docs",
         search: {
