@@ -1,28 +1,157 @@
-import { defineConfig } from 'vitepress'
+import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "EvOC UserDocs",
-  description: "User documentation of EvOC",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+    ignoreDeadLinks: true,
+    title: "EvOC Docs",
+    description: "Documentation for Evolutionary Algorithms On Click (EvOC)",
+    head: [
+        ["link", { rel: "shortcut icon", href: "/logo.ico" }],
+        [
+            "link",
+            {
+                rel: "icon",
+                type: "image/png",
+                sizes: "32x32",
+                href: "/logo.png",
+            },
+        ],
+        [
+            "link",
+            {
+                rel: "icon",
+                type: "image/png",
+                sizes: "16x16",
+                href: "/logo.png",
+            },
+        ],
+        [
+            "link",
+            { rel: "apple-touch-icon", sizes: "180x180", href: "/logo.png" },
+        ],
+        ["link", { rel: "mask-icon", href: "/logo.svg", color: "#3eaf7c" }],
+        ["meta", { name: "theme-color", content: "#3eaf7c" }],
+        ["meta", { name: "mobile-web-app-capable", content: "yes" }],
+        ["meta", { name: "apple-mobile-web-app-capable", content: "yes" }],
+        [
+            "meta",
+            { name: "apple-mobile-web-app-status-bar-style", content: "black" },
+        ],
+        ["meta", { name: "msapplication-TileColor", content: "#000000" }],
+        ["meta", { name: "msapplication-TileImage", content: "/logo.png" }],
+        [
+            "meta",
+            { name: "msapplication-config", content: "/browserconfig.xml" },
+        ],
+        [
+            "meta",
+            {
+                name: "viewport",
+                content: "width=device-width, initial-scale=1.0",
+            },
+        ],
+        [
+            "meta",
+            {
+                name: "description",
+                content:
+                    "Documentation for Evolutionary Algorithms On Click (EvOC)",
+            },
+        ],
+        ["meta", { property: "og:title", content: "EvOC Docs" }],
+        [
+            "meta",
+            {
+                property: "og:description",
+                content:
+                    "Documentation for Evolutionary Algorithms On Click (EvOC)",
+            },
+        ],
+        ["meta", { property: "og:image", content: "/logo.png" }],
+        [
+            "meta",
+            {
+                property: "og:url",
+                content:
+                    "https://evolutionary-algorithms-on-click.github.io/user_docs/",
+            },
+        ],
+        ["meta", { property: "og:type", content: "website" }],
+        ["meta", { property: "og:site_name", content: "EvOC Docs" }],
+        ["meta", { property: "og:locale", content: "en_US" }],
+        ["meta", { name: "twitter:card", content: "summary" }],
+        ["meta", { name: "twitter:title", content: "EvOC Docs" }],
+        [
+            "meta",
+            {
+                name: "twitter:description",
+                content:
+                    "Documentation for Evolutionary Algorithms On Click (EvOC)",
+            },
+        ],
+        ["meta", { name: "twitter:image", content: "/logo.png" }],
     ],
+    themeConfig: {
+        logo: "/logo.png",
+        logoLink: "/",
+        repo: "Evolutionary-Algorithms-On-Click/user_docs",
+        search: {
+            provider: "local",
+            placeholder: "Search",
+        },
+        nav: [
+            { text: "Home", link: "/" },
+            { text: "Get Started", link: "/get-started" },
+            {
+                text: "Examples",
+                items: [
+                    { text: "EA Run", link: "/ea-run" },
+                    { text: "GP Run", link: "/gp-run" },
+                    { text: "PSO Run", link: "/pso-run" },
+                    { text: "DE Run", link: "/de-run" },
+                    { text: "Optimize ML Run", link: "/ml-run" },
+                ],
+            },
+        ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
+        sidebar: [
+            {
+                text: "Getting Started",
+                collapsed: false,
+                items: [
+                    { text: "Setup Environment", link: "/get-started" },
+                    { text: "Backend Setup", link: "/backend-setup" },
+                    { text: "Frontend Setup", link: "/frontend-setup" },
+                ],
+            },
+            {
+                text: "User Guide",
+                collapsed: false,
+                items: [
+                    { text: "Register and Login", link: "/auth" },
+                    {
+                        text: "Examples",
+                        collapsed: false,
+                        items: [
+                            { text: "EA Run", link: "/ea-run" },
+                            { text: "GP Run", link: "/gp-run" },
+                            { text: "PSO Run", link: "/pso-run" },
+                            { text: "DE Run", link: "/de-run" },
+                            { text: "Optimize ML Run", link: "/ml-run" },
+                        ],
+                    },
+                ],
+            },
+        ],
 
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+        socialLinks: [
+            {
+                icon: "github",
+                link: "https://github.com/Evolutionary-Algorithms-On-Click",
+            },
+        ],
+
+        footer: {
+            message: "Released under the GPL 3.0 License.",
+        },
+    },
+});
