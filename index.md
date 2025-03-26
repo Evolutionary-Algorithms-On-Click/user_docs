@@ -14,14 +14,23 @@ hero:
           link: /get-started
         - theme: alt
           text: Explore
-          link: /ea-run
+          link: "/ea-run"
 
-# TODO: Add proper features later on.
 features:
-    - title: Feature A
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - title: Feature B
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    - title: Feature C
-      details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - title: "Configure"
+      icon: ⚙️
+      details: "Configure EA parameters for GP, PSO, DE, and traditional EA algorithms with ease."
+      link: "/ea-run"
+    - title: "Visualize"
+      icon: 📈
+      details: "Visualize algorithm results through graphs and logs."
+      link: "/ea-run"
+    - title: "Generate Code"
+      icon: 💻
+      details: "Generate Python code (powered by DEAP) for your configured algorithms."
+      link: "/ea-run"
+    - title: "Run, Save, & Share"
+      icon: 🚀
+      details: "Execute algorithms, save results, and share your findings effortlessly."
+      link: "/ea-run"
 ---

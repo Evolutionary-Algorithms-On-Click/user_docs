@@ -98,8 +98,8 @@ export default defineConfig({
         ["meta", { name: "twitter:image", content: "/user_docs/logo.png" }],
     ],
     themeConfig: {
-        logo: "/user_docs/logo.png",
-        logoLink: "/",
+        logo: "/logo.png",
+        logoLink: "/user_docs",
         repo: "Evolutionary-Algorithms-On-Click/user_docs",
         search: {
             provider: "local",
@@ -118,6 +118,7 @@ export default defineConfig({
                     { text: "Optimize ML Run", link: "/ml-run" },
                 ],
             },
+            { text: "Team", link: "/team" },
         ],
 
         sidebar: [
@@ -148,6 +149,11 @@ export default defineConfig({
                     },
                 ],
             },
+            {
+                text: "Team",
+                collapsed: false,
+                items: [{ text: "The Team", link: "/team" }],
+            },
         ],
 
         socialLinks: [
@@ -158,7 +164,7 @@ export default defineConfig({
         ],
 
         footer: {
-            message: "Released under the GPL 3.0 License.",
+            message: "Released under the GPL 3.0 License as of 2025.",
         },
     },
 });
