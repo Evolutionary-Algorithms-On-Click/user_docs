@@ -148,6 +148,14 @@ export default defineConfig({
                     },
                 ],
             },
+            {
+                text: "FAQs",
+                collapsed: false,
+                items: [
+                    { text: "Common Problems", link: "/FAQ" },
+    
+                ],
+            },
         ],
 
         socialLinks: [
