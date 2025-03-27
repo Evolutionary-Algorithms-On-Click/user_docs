@@ -150,6 +150,13 @@ export default defineConfig({
                 ],
             },
             {
+                text: "FAQs",
+                collapsed: false,
+                items: [
+                    { text: "Common Problems", link: "/FAQ" },
+                ],
+            },
+            {
                 text: "Team",
                 collapsed: false,
                 items: [{ text: "The Team", link: "/team" }],

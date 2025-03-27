@@ -17,3 +17,7 @@ Check the `spam` folder if not in your primary inbox of your Gmail account for t
 Return to the login page after successful registration and log in using your registered `username` and `password`.
 
 ![Login page](https://i.imgur.com/6BBx02U.png)
+
+Home Page:
+
+![Home page](https://i.imgur.com/LI5S3zk.png)
