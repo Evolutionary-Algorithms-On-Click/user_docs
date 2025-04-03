@@ -107,15 +107,15 @@ export default defineConfig({
         },
         nav: [
             { text: "Home", link: "/" },
-            { text: "Get Started", link: "/get-started" },
+            { text: "Get Started", link: "/introduction" },
             {
                 text: "Examples",
                 items: [
-                    { text: "EA Run", link: "/ea-run" },
-                    { text: "GP Run", link: "/gp-run" },
-                    { text: "PSO Run", link: "/pso-run" },
-                    { text: "DE Run", link: "/de-run" },
-                    { text: "Optimize ML Run", link: "/ml-run" },
+                    { text: "EA Run", link: "/user-guide/ea-run" },
+                    { text: "GP Run", link: "/user-guide/gp-run" },
+                    { text: "PSO Run", link: "/user-guide/pso-run" },
+                    { text: "DE Run", link: "/user-guide/de-run" },
+                    { text: "Optimize ML Run", link: "/user-guide/ml-run" },
                 ],
             },
             { text: "Team", link: "/team" },
@@ -123,31 +123,44 @@ export default defineConfig({
 
         sidebar: [
             {
-                text: "Getting Started",
+                text: "Get Started",
+                collapsed: false,
+                items: [{ text: "Introduction", link: "/introduction" }],
+            },
+            {
+                text: "Installation",
                 collapsed: false,
                 items: [
-                    { text: "Setup Environment", link: "/get-started" },
-                    { text: "Backend Setup", link: "/backend-setup" },
-                    { text: "Frontend Setup", link: "/frontend-setup" },
+                    { text: "Pre-requisites", link: "/install/env-setup" },
+                    { text: "Backend Setup", link: "/install/backend-setup" },
+                    { text: "Frontend Setup", link: "/install/frontend-setup" },
                 ],
             },
             {
                 text: "User Guide",
                 collapsed: false,
                 items: [
-                    { text: "Register and Login", link: "/auth" },
+                    { text: "Register and Login", link: "/user-guide/auth" },
                     {
                         text: "Examples",
                         collapsed: false,
                         items: [
-                            { text: "EA Run", link: "/ea-run" },
-                            { text: "GP Run", link: "/gp-run" },
-                            { text: "PSO Run", link: "/pso-run" },
-                            { text: "DE Run", link: "/de-run" },
-                            { text: "Optimize ML Run", link: "/ml-run" },
+                            { text: "EA Run", link: "/user-guide/ea-run" },
+                            { text: "GP Run", link: "/user-guide/gp-run" },
+                            { text: "PSO Run", link: "/user-guide/pso-run" },
+                            { text: "DE Run", link: "/user-guide/de-run" },
+                            {
+                                text: "Optimize ML Run",
+                                link: "/user-guide/ml-run",
+                            },
                         ],
                     },
                 ],
+            },
+            {
+                text: "FAQs",
+                collapsed: false,
+                items: [{ text: "Common Problems", link: "/FAQ" }],
             },
             {
                 text: "Team",
