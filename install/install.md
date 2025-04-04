@@ -3,7 +3,7 @@ title: Backend Setup
 description: Deploy the EvOC backend services locally using Docker Compose. This guide provides step-by-step instructions for setting up the backend environment.
 ---
 
-# Deploying EvOC Backend Locally
+# Deploying EvOC Locally
 
 This guide will help you deploy the backend services of the Evolutionary Algorithms On Click (EvOC) project locally using Docker Compose.
 
@@ -50,6 +50,15 @@ AUTH_GRPC_PORT = 5001
 
 RUNNER_CONTROLLER_HTTP_PORT = 5002
 AUTH_GRPC_ADDRESS = host.docker.internal:5001
+
+
+NEXT_PUBLIC_BACKEND_BASE_URL=http://localhost:5002
+NEXT_PUBLIC_AUTH_BASE_URL=http://localhost:5000
+NEXT_PUBLIC_MINIO_BASE_URL=http://localhost:9000
+
+# Set to true and add your API key to enable AI features.
+NEXT_PUBLIC_AI=false
+GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
 ```
 
 ![env-content](https://i.imgur.com/1uGj3rU.png)
@@ -73,6 +82,10 @@ The following services will start installing:
 If the following statements are displayed after installation, you have successfully set up the backend:
 
 ![docker-complete](https://i.imgur.com/eQ3oz2Y.png)
+
+## Accessing EvOC
+
+Once the services are up and running, you can access the EvOC backend at [http://localhost:3000](http://localhost:3000).
 
 ## Clean Up
 
