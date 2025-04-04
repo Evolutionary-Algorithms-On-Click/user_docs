@@ -132,8 +132,7 @@ export default defineConfig({
                 collapsed: false,
                 items: [
                     { text: "Pre-requisites", link: "/install/env-setup" },
-                    { text: "Backend Setup", link: "/install/backend-setup" },
-                    { text: "Frontend Setup", link: "/install/frontend-setup" },
+                    { text: "Install", link: "/install/install" },
                 ],
             },
             {
