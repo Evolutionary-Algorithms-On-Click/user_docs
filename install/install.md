@@ -85,7 +85,7 @@ If the following statements are displayed after installation, you have successfu
 
 ## Accessing EvOC
 
-Once the services are up and running, you can access the EvOC backend at [http://localhost:3000](http://localhost:3000).
+Once the services are up and running, you can access EvOC at [http://localhost:3000](http://localhost:3000).
 
 ## Clean Up
 
