@@ -1,11 +1,11 @@
 # Meet the EvOC Team
 
-Explore our dedicated team members below:
+Get to know our dedicated team members:
 
-| **Name**               | **Department & Institution**                                                                                                         | **Links**                                                     |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
-| **Dr. Ritwik M**       | Department of Computer Science and Engineering,<br/>Amrita School of Computing,<br/>Amrita Vishwa Vidyapeetham, Coimbatore<br/>India | [Email](mailto:m_ritwik@cb.amrita.edu)                        |
-| **Ashwin Narayanan S** | Department of Computer Science and Engineering,<br/>Amrita School of Computing,<br/>Amrita Vishwa Vidyapeetham, Coimbatore<br/>India | [Portfolio](https://ashrockzzz2003.github.io/portfolio/)      |
-| **Abhinav R**          | Department of Computer Science and Engineering,<br/>Amrita School of Computing,<br/>Amrita Vishwa Vidyapeetham, Coimbatore<br/>India | [Portfolio](https://www.abhinavramakrishnan.tech/)            |
-| **Ananya R**           | Department of Computer Science and Engineering,<br/>Amrita School of Computing,<br/>Amrita Vishwa Vidyapeetham, Coimbatore<br/>India | [LinkedIn](https://www.linkedin.com/in/ananyaramamurthy1610/) |
-| **Hariharan Arul**     | Department of Computer Science and Engineering,<br/>Amrita School of Computing,<br/>Amrita Vishwa Vidyapeetham, Coimbatore<br/>India | [LinkedIn](https://www.linkedin.com/in/hariharan-arul/)       |
+| Profile                                          | **Name & Role**                                   | **Affiliation**                                                                                                                 | **Links**                                                     |
+| ------------------------------------------------ | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| ![Ritwik Sir Profile](/images/team/ritwik.png)   | **Dr. Ritwik M**<br>Assistant Professor (SlGr)    | Department of Computer Science and Engineering, Amrita School of Computing,<br>Amrita Vishwa Vidyapeetham,<br>Coimbatore, India | [Email](mailto:m_ritwik@cb.amrita.edu)                        |
+| ![Ashwin Profile](/images/team/ashwin.png)       | **Ashwin Narayanan S**<br>Student                 | Department of Computer Science and Engineering, Amrita School of Computing,<br>Amrita Vishwa Vidyapeetham,<br>Coimbatore, India | [Portfolio](https://ashrockzzz2003.github.io/portfolio/)      |
+| ![Abhinav Profile](/images/team/abhinav.png)     | **Abhinav R**<br>Software Engineering Intern, BNY | Department of Computer Science and Engineering, Amrita School of Computing,<br>Amrita Vishwa Vidyapeetham,<br>Coimbatore, India | [Portfolio](https://www.abhinavramakrishnan.tech/)            |
+| ![Ananya Profile](/images/team/ananya.png)       | **Ananya R**<br>Intern, Caterpillar               | Department of Computer Science and Engineering, Amrita School of Computing,<br>Amrita Vishwa Vidyapeetham,<br>Coimbatore, India | [LinkedIn](https://www.linkedin.com/in/ananyaramamurthy1610/) |
+| ![Hariharan Profile](/images/team/hariharan.png) | **Hariharan Arul**<br>Frontend Developer, TCS     | Department of Computer Science and Engineering, Amrita School of Computing,<br>Amrita Vishwa Vidyapeetham,<br>Coimbatore, India | [LinkedIn](https://www.linkedin.com/in/hariharan-arul/)       |
