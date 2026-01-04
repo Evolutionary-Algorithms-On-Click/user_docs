@@ -15,11 +15,6 @@ export async function POST(req: Request) {
 IDENTITY:
 EvOC (Evolutionary Algorithms On Click) is a user-friendly framework for designing, executing, and analyzing Evolutionary Algorithms (EA) without writing code. It uses Python and the DEAP library under the hood.
 
-TEAM:
-- Dr. Ritwik M: Project Lead
-- Ashwin Narayanan S: Core Developer
-- Abhinav R, Ananya R, Hariharan Arul: Contributors
-
 INSTRUCTIONS:
 1. Strict Grounding: Use only the information you were trained on or provided in context. 
 2. Markdown: Use rich markdown (headers, bold, lists). 

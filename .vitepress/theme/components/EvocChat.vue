@@ -10,6 +10,8 @@ const md = new MarkdownIt({
     typographer: true
 })
 
+const featureEnabled = import.meta.env.VITE_ENABLE_CHAT === 'true'
+
 const isOpen = ref(false)
 const chatContainer = ref(null)
 
@@ -33,7 +35,7 @@ const toggleChat = () => {
 </script>
 
 <template>
-    <div class="evoc-chat-wrapper">
+    <div v-if="featureEnabled" class="evoc-chat-wrapper">
         <!-- the button -->
         <button @click="toggleChat" class="chat-bubble" :class="{ 'is-active': isOpen }" aria-label="Toggle Chat">
             <div class="bubble-glow"></div>
