@@ -1,29 +1,10 @@
-# <img src="./public/logo.png" width="40" height="40" valign="middle"> EvOC: Evolutionary Algorithms On Click
+# <img src="./public/logo.png" width="40" height="40" valign="middle"> EvOC User Documentation
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![VitePress](https://img.shields.io/badge/Documentation-VitePress-blueviolet?style=flat-square&logo=vite)](https://vitepress.dev/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-**EvOC** (Evolve On Click) is a powerful, user-friendly framework designed for visualizing and executing evolutionary algorithms with just a click. Whether you're a student, researcher, or educator, EvOC eliminates the coding barrier, allowing you to focus on the science of evolution.
-
----
-
-## Key Features
-
-- **Intuitive Configuration**: Visually set parameters for GA, GP, PSO, and ML Tuning through a sleek GUI.
-- **Powerful Visualizations**: Instantly view fitness plots, GP trees, and PSO animations to understand your algorithm's behavior.
-- **Code Generation**: Automatically generate clean, DEAP-based Python code from your configuration.
-- **ML Tuning**: Optimize model hyperparameters and features effortlessly.
-- **AI-Powered Explanations**: Integrated EvOC AI helps you understand complex concepts and generated code.
-- **Cloud & Local**: Accessible via web app or local installation (Docker support).
-
----
-
-## Preview
-
-| Configuration | Visualization | AI Explanations |
-| :---: | :---: | :---: |
-| <img src="./public/images/ea-select.png" width="250"> | <img src="./public/images/ea-fitness-plot.png" width="250"> | <img src="./public/images/ea-ai.png" width="250"> |
+Welcome to the official repository for **EvOC (Evolve On Click)** user documentation. This repository contains all the guides, tutorials, and technical documentations for the EvOC framework.
 
 ---
 
