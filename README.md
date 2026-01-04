@@ -47,6 +47,17 @@ To run this documentation site locally:
      ```
    *(You can get a free key from [Google AI Studio](https://aistudio.google.com/app/apikey))*
 
+   **Feature Flags (Optional):**
+   - **Enable Chatbot UI:** To see the chatbot in the UI, set `VITE_ENABLE_CHAT=true`.
+   - **Full Context Mode:** To give the AI access to all documentation (high token usage), set `INCLUDE_DOCS_CONTEXT=true`.
+
+   Example `.env` file:
+   ```env
+   GOOGLE_GENERATIVE_AI_API_KEY=your_key_here
+   VITE_ENABLE_CHAT=true
+   INCLUDE_DOCS_CONTEXT=true
+   ```
+
 4. **Start development server:**
    ```bash
    npm run docs:dev
