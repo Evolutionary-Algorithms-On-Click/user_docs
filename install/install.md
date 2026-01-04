@@ -62,6 +62,45 @@ GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
 
 ![env-content](https://i.imgur.com/1uGj3rU.png)
 
+
+## Obtain a Gemini API Key (Optional – Required for AI Features)
+
+EvOC supports AI-powered features using Google’s **Gemini API**.  
+To enable these features, you must obtain a Gemini API key and add it to your `.env` file.
+
+### Steps to get a Gemini API key
+
+1. Visit **Google AI Studio**:  
+   https://aistudio.google.com/
+
+2. Sign in with your Google account.
+
+3. Click **Get API key** → **Create API key**.
+
+4. Select an existing Google Cloud project or create a new one.
+
+5. Copy the generated API key.
+
+### Enable AI features
+
+In your `.env` file:
+```env
+NEXT_PUBLIC_AI=true
+GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
+```
+
+
+If you do not want AI features, keep:
+```
+NEXT_PUBLIC_AI=false
+```
+
+::: warning
+Do not commit your API key to version control.
+The .env file should remain private and untracked.
+:::
+
+
 ## Run Services
 
 Run all services using the Docker Compose `.yml` file. Execute this command inside the `operations` directory:
