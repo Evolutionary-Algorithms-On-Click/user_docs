@@ -20,10 +20,7 @@ Follow these steps to set up and execute a DE algorithm:
     - From the main EvOC Dashboard, click on the **`Evolutionary Algorithms (EA)`** option. DE is configured within this general EA framework.
 
 2.  **Choose the `de` Strategy:**
-
     - This is the crucial step for DE. Within the configuration screen, specifically select **`de`** from the available "Algorithm Strategy" options.
-
-    ![Selecting the 'de' algorithm strategy within the EA configuration screen](https://i.imgur.com/HF06qQO.png)
 
     ::: tip Key Step
     Selecting the **`de`** strategy is essential to activate the Differential Evolution specific logic and parameters.
@@ -58,21 +55,15 @@ The results interface for DE runs is similar to other traditional EAs:
 
 - Use the **`Share Run`** button to share the DE configuration and results with other EvOC users via email (comma-separate multiple addresses).
 
-    ![Sharing the run results via email addresses](https://i.imgur.com/US3uH0p.png)
-
 ### Viewing and Downloading Logs
 
 - Click **`Show Logs`** to inspect generation-by-generation fitness statistics.
 - Click **`Download Logs`** within the log view to save the data (`.txt`) for external analysis.
 
-    ![Viewing generation-wise logs and the download button](https://i.imgur.com/AeAq3l6.jpeg)
-
 ### Viewing the Generated Code
 
 - Use **`Show Code`** to view the DEAP Python code implementing the DE logic based on your settings.
 - Remember the **`Ask EvOC AI to Explain`** feature is available for code assistance.
-
-    ![Viewing the DEAP-based Python code generated from the DE configuration](https://i.imgur.com/rvoJNUP.png)
 
 ### Accessing Run History
 

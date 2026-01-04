@@ -70,8 +70,6 @@ After the execution status changes to "Completed", the results interface will ap
 - Click **`Share Run`** to share this specific experiment configuration and results with other registered EvOC users.
 - Enter their email addresses (comma-separated for multiple users) in the pop-up window.
 
-    ![Sharing the run results via email addresses](https://i.imgur.com/US3uH0p.png)
-
 ### Viewing and Downloading Logs
 
 - Click **`Show Logs`** to view detailed generation-wise statistics (e.g., average fitness, min/max, standard deviation).

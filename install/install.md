@@ -23,8 +23,6 @@ Navigate into the project folder and create an `.env` file:
 touch .env
 ```
 
-![env-creation](https://i.imgur.com/pETnAVR.png)
-
 ## Paste Environment Variables
 
 The `MAILER_EMAIL` and `MAILER_PASSWORD` fields should be populated with the email address and app password of the email account you configured as described in [Get Started](/get-started#create-a-gmail-mailer-account).
@@ -60,8 +58,6 @@ NEXT_PUBLIC_AI=false
 GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
 ```
 
-![env-content](https://i.imgur.com/1uGj3rU.png)
-
 ## Run Services
 
 Run all services using the Docker Compose `.yml` file. Execute this command inside the `operations` directory:
@@ -70,17 +66,9 @@ Run all services using the Docker Compose `.yml` file. Execute this command insi
 docker compose up -d
 ```
 
-Alternatively, click the `Run All Services` button at the start of the `.yml` file (if your IDE supports it):
+Alternatively, you can use the Docker extension in your IDE to run the services.
 
-![extension-in-action](https://i.imgur.com/uR0PH3J.png)
-
-The following services will start installing:
-
-![docker-start](https://i.imgur.com/4UsiBr7.png)
-
-If the following statements are displayed after installation, you have successfully set up the backend:
-
-![docker-complete](https://i.imgur.com/eQ3oz2Y.png)
+The services will start installing. Once completed, verify that the containers are running (e.g., using `docker ps`).
 
 ## Accessing EvOC
 
