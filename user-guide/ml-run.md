@@ -77,7 +77,7 @@ After the run completes, analyze the results:
 
 - Click **`Share Run`** to share this specific ML optimization setup and outcome with other EvOC users via email.
 
-    ![Sharing the run results via email addresses](https://i.imgur.com/US3uH0p.png)
+    ![Sharing the run results via email addresses](./assets/de_share.png)
 
 ### Viewing and Downloading Logs
 

@@ -13,7 +13,7 @@ Encountering problems? Here are solutions for some common issues you might face 
 
 After accessing the EvOC web application and clicking the **`Get Started`** or **`Sign Up`** button on the homepage, you immediately see an error message, potentially similar to this:
 
-![Error message appearing shortly after clicking Get Started, possibly related to loading resources](https://i.imgur.com/XCiKGpB.png)
+![Error message appearing shortly after clicking Get Started, possibly related to loading resources](./user-guide/assets/error_message.png)
 
 ### Cause
 

@@ -59,7 +59,7 @@ After the execution finishes, the results interface will display information spe
 - Click **`Share Run`** to share this GP experiment (configuration and results) with other registered EvOC users.
 - Enter their email addresses (comma-separated for multiple users) in the pop-up window.
 
-    ![Sharing the run results via email addresses](https://i.imgur.com/US3uH0p.png)
+    ![Sharing the run results via email addresses](./assets/showrun.jpeg)
 
 ### Viewing and Downloading Logs
 
