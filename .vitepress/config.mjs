@@ -1,4 +1,12 @@
 import { defineConfig } from "vitepress";
+import path from "path";
+import fs from "fs";
+import { google } from "@ai-sdk/google";
+import { streamText } from "ai";
+import dotenv from "dotenv";
+import { globSync } from "glob";
+
+dotenv.config();
 
 export default defineConfig({
     base: "/user_docs/",
@@ -178,5 +186,114 @@ export default defineConfig({
         footer: {
             message: "Released under the GPL 3.0 License as of 2025.",
         },
+    },
+    vite: {
+        resolve: {
+            alias: {
+                "zod/v3": "zod",
+                "zod/v4": "zod",
+            },
+        },
+        plugins: [
+            {
+                name: "handle-chat-api",
+                configureServer(server) {
+                    server.middlewares.use(async (req, res, next) => {
+                        if (req.url === "/api/chat" && req.method === "POST") {
+                            let body = "";
+                            req.on("data", (chunk) => {
+                                body += chunk.toString();
+                            });
+                            req.on("end", async () => {
+                                try {
+                                    const { messages } = JSON.parse(body);
+
+                                    if (
+                                        !process.env
+                                            .GOOGLE_GENERATIVE_AI_API_KEY
+                                    ) {
+                                        throw new Error(
+                                            "Missing GOOGLE_GENERATIVE_AI_API_KEY in .env file",
+                                        );
+                                    }
+
+                                    let docsContext = "";
+                                    let systemPrompt = "";
+
+                                    const includeDocs = process.env.INCLUDE_DOCS_CONTEXT === "true";
+
+                                    if (includeDocs) {
+                                        const docsPath = path.resolve(process.cwd());
+                                        const mdFiles = globSync("**/*.md", { 
+                                            cwd: docsPath, 
+                                            ignore: ["node_modules/**"] 
+                                        });
+                                        
+                                        for (const file of mdFiles) {
+                                            const fullPath = path.join(docsPath, file);
+                                            const content = fs.readFileSync(fullPath, "utf-8");
+                                            docsContext += `\n--- FILE: ${file} ---\n${content}\n`;
+                                        }
+
+                                        systemPrompt = `You are the EvOC AI Assistant. Your PRIMARY goal is to provide accurate information based EXCLUSIVELY on the project's documentation provided below.
+
+DOCUMENTATION CONTEXT:
+${docsContext}
+
+INSTRUCTIONS:
+1. Strict Grounding: Use ONLY the documentation provided above. If the answer is not in the documentation, state that you don't have that information.
+2. Identity: EvOC is a GUI-based framework for Evolutionary Algorithms using Python/DEAP.
+3. Markdown: Use rich markdown (headers, bold, lists, code blocks).
+4. Professionalism: Be helpful, concise, and professional.`;
+
+
+                                    } else {
+                                        // less token prompt
+                                        systemPrompt = `You are the EvOC AI Assistant, a specialized technical guide for the Evolve On Click (EvOC) framework. Your PRIMARY goal is to provide accurate information based on the project's documentation.
+
+IDENTITY:
+EvOC (Evolutionary Algorithms On Click) is a user-friendly framework for designing, executing, and analyzing Evolutionary Algorithms (EA) without writing code. It uses Python and the **DEAP library** under the hood.
+
+INSTRUCTIONS:
+1. Guidance: Answer questions about EvOC's features, algorithms (GA, GP, PSO, DE), and usage.
+2. Markdown: Use rich markdown (headers, bold, lists).
+3. Professionalism: Be helpful, concise, and professional.
+4. Note: Full documentation context is currently disabled. Answer based on general knowledge of the framework.`;
+                                    }
+
+                                    const result = await streamText({
+                                        model: google("gemini-flash-latest"),
+                                        system: systemPrompt,
+                                        messages,
+                                    });
+
+                                    res.setHeader(
+                                        "Content-Type",
+                                        "text/plain; charset=utf-8",
+                                    );
+                                    res.setHeader("x-vercel-ai-data-stream", "v1");
+
+                                    for await (const textPart of result.textStream) {
+                                        res.write(`0:${JSON.stringify(textPart)}\n`);
+                                    }
+                                    res.end();
+                                } catch (error) {
+                                    console.error("--- Chat API ERROR ---");
+                                    console.error(error);
+                                    res.statusCode = 500;
+                                    res.end(
+                                        JSON.stringify({
+                                            error: error.message,
+                                        }),
+                                    );
+                                }
+                            });
+                        } else {
+                            next();
+                        }
+                    });
+                },
+            },
+        ],
     },
 });

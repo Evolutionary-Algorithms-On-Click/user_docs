@@ -33,12 +33,37 @@ To run this documentation site locally:
    npm install
    ```
 
-3. **Start development server:**
+
+3. **Configure API Key:**
+   The AI Chat Assistant requires a Google Gemini API key to function locally.
+   
+   - Create a `.env` file in the root directory:
+     ```bash
+     touch .env
+     ```
+   - Add your API Key to the file:
+     ```env
+     GOOGLE_GENERATIVE_AI_API_KEY=your_actual_api_key_here
+     ```
+   *(You can get a free key from [Google AI Studio](https://aistudio.google.com/app/apikey))*
+
+   **Feature Flags (Optional):**
+   - **Enable Chatbot UI:** To see the chatbot in the UI, set `VITE_ENABLE_CHAT=true`.
+   - **Full Context Mode:** To give the AI access to all documentation (high token usage), set `INCLUDE_DOCS_CONTEXT=true`.
+
+   Example `.env` file:
+   ```env
+   GOOGLE_GENERATIVE_AI_API_KEY=your_key_here
+   VITE_ENABLE_CHAT=true
+   INCLUDE_DOCS_CONTEXT=true
+   ```
+
+4. **Start development server:**
    ```bash
    npm run docs:dev
    ```
 
-4. **Build for production:**
+5. **Build for production:**
    ```bash
    npm run docs:build
    ```
@@ -49,13 +74,13 @@ To run this documentation site locally:
 
 ```bash
 user_docs/
-├── .vitepress/        #VitePress configuration
-├── public/            #Assets like images and logos
-├── user-guide/        #Detailed guides for EA, ML tuning, etc.
-├── install/           #Installation instructions
-├── index.md           #Homepage
-├── introduction.md    #Getting started guide
-└── package.json       #Project dependencies
+├── .vitepress/        # VitePress configuration
+├── public/            # Assets like images and logos
+├── user-guide/        # Detailed guides for EA, ML tuning, etc.
+├── install/           # Installation instructions
+├── index.md           # Homepage
+├── introduction.md    # Getting started guide
+└── package.json       # Project dependencies
 ```
 
 ---
