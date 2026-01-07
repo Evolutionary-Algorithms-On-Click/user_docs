@@ -23,6 +23,7 @@ Navigate into the project folder and create an `.env` file:
 touch .env
 ```
 
+![env-creation](./assets/env_creation.png)
 
 ## Paste Environment Variables
 
@@ -46,9 +47,10 @@ MAILER_PASSWORD = <mailer_pass>
 FRONTEND_URL = http://localhost:3000
 AUTH_HTTP_PORT = 5000
 AUTH_GRPC_PORT = 5001
-REDIS_URL= redis://host.docker.internal:6379/0
+
 RUNNER_CONTROLLER_HTTP_PORT = 5002
 AUTH_GRPC_ADDRESS = host.docker.internal:5001
+
 
 NEXT_PUBLIC_BACKEND_BASE_URL=http://localhost:5002
 NEXT_PUBLIC_AUTH_BASE_URL=http://localhost:5000
@@ -59,45 +61,7 @@ NEXT_PUBLIC_AI=false
 GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
 ```
 
-
-
-## Obtain a Gemini API Key (Optional – Required for AI Features)
-
-EvOC supports AI-powered features using Google’s **Gemini API**.  
-To enable these features, you must obtain a Gemini API key and add it to your `.env` file.
-
-### Steps to get a Gemini API key
-
-1. Visit **Google AI Studio**:  
-   https://aistudio.google.com/
-
-2. Sign in with your Google account.
-
-3. Click **Get API key** → **Create API key**.
-
-4. Select an existing Google Cloud project or create a new one.
-
-5. Copy the generated API key.
-
-### Enable AI features
-
-In your `.env` file:
-```env
-NEXT_PUBLIC_AI=true
-GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
-```
-
-
-If you do not want AI features, keep:
-```
-NEXT_PUBLIC_AI=false
-```
-
-::: warning
-Do not commit your API key to version control.
-The .env file should remain private and untracked.
-:::
-
+![env-content](./assets/env_content.png)
 
 ## Run Services
 
@@ -109,13 +73,19 @@ docker compose up -d
 
 Alternatively, click the `Run All Services` button at the start of the `.yml` file (if your IDE supports it):
 
+![docker-command](./assets/docker_command.png)
 
+The following services will start installing:
 
+![docker-start](./assets/docker_pulling.png)
 
+If the following statements are displayed after installation, you have successfully set up the backend:
+
+![docker-complete](./assets/docker_compose.png)
 
 ## Accessing EvOC
 
-Once the services are up and running, you can access EvOC at [http://localhost:3000](http://localhost:3000).
+Once the services are up and running, you can access the EvOC backend at [http://localhost:3000](http://localhost:3000).
 
 ## Clean Up
 

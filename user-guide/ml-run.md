@@ -15,7 +15,7 @@ Follow these steps to set up an EA for ML model optimization (specifically featu
 
     - From the main EvOC Dashboard, click on the **`EA for ML Model Tuning`** option.
 
-    ![Selecting the EA for ML Model Tuning option from the dashboard](https://i.imgur.com/YKRgaOh.png)
+    ![Selecting the EA for ML Model Tuning option from the dashboard](./assets/ml_model_tuning.png)
 
 2.  **Provide Dataset Information:**
 
@@ -39,7 +39,7 @@ Follow these steps to set up an EA for ML model optimization (specifically featu
         - Returns the performance metric as the fitness value for the EA to optimize.
     - You can modify this Python code to use different models, evaluation metrics (like F1-score, AUC), or implement more complex cross-validation strategies.
 
-    ![Configuration fields for dataset URL, target column, delimiter, ML import code, and ML evaluation function code](https://i.imgur.com/zvjyqKU.png)
+    <video controls src="./assets/ml_init.mp4" title="Configuration fields for dataset URL, target column, delimiter, ML import code, and ML evaluation function code" width="100%"></video>
 
     ::: info Important Configuration Notes
 
@@ -71,7 +71,7 @@ After the run completes, analyze the results:
 - The **Best Individual Fitness** indicates the highest performance metric achieved.
 - The **Best Individual** section is crucial: it typically shows the binary vector representing the **optimal subset of features** selected by the EA. A `1` at a position indicates that the corresponding feature from your original dataset should be included for the best performance found.
 
-    ![Results page showing the fitness plot and best individual details (selected features)](https://i.imgur.com/p8zyS2k.png)
+    ![Results page showing the fitness plot and best individual details (selected features)](./assets/ml_run_result.png)
 
 ### Sharing Your Run
 
@@ -84,14 +84,14 @@ After the run completes, analyze the results:
 - Use **`Show Logs`** to view the generation-wise best fitness values achieved during the optimization.
 - Click **`Download Logs`** to save this data (`.txt`) for offline analysis.
 
-    ![Viewing generation-wise logs for the ML optimization run and the download button](https://i.imgur.com/Z24bLCQ.png)
+    ![Viewing generation-wise logs for the ML optimization run and the download button](./assets/ml_log.gif)
 
 ### Viewing the Generated Code
 
 - Inspect the underlying EA code (using DEAP) and the integrated ML evaluation logic by clicking **`Show Code`**.
 - Use **`Ask EvOC AI to Explain`** for help understanding the code.
 
-    ![Viewing the Python code generated for the EA-based ML feature selection](https://i.imgur.com/RQBZmiE.png)
+    ![Viewing the Python code generated for the EA-based ML feature selection](./assets/ml_code_gen.gif)
 
 ### Accessing Run History
 

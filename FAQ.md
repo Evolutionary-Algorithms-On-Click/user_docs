@@ -34,7 +34,7 @@ Alternatively, you can try clearing your browser's cache specifically for the Ev
 
 If you are running EvOC via a **local installation** (using Docker, etc.), you might see error messages appear in the terminal window where you launched the EvOC services. These errors often mention failures to connect to or fetch required microservices. The application UI might fail to load certain parts or become unresponsive. An example might look like this:
 
-![Terminal output showing error messages related to fetching or connecting to microservices](https://i.imgur.com/1x4NVoa.png)
+![Terminal output showing error messages related to fetching or connecting to microservices](./user-guide/assets/microservices_error.png)
 
 ### Cause
 
