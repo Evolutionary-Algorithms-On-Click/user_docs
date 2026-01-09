@@ -70,7 +70,7 @@ After the execution status changes to "Completed", the results interface will ap
 - Click **`Share Run`** to share this specific experiment configuration and results with other registered EvOC users.
 - Enter their email addresses (comma-separated for multiple users) in the pop-up window.
 
-    ![Sharing the run results via email addresses](https://i.imgur.com/US3uH0p.png)
+    ![Sharing the run results via email addresses](./assets/showrun.jpeg)
 
 ### Viewing and Downloading Logs
 

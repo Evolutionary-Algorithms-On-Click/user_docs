@@ -18,7 +18,7 @@ Creating your account involves these steps:
     - Go to the EvOC Web Application URL.
     - On the main screen, click the **`Get Started`** link or button and then select **`Sign Up Now`**.
 
-![Home Page](https://i.imgur.com/y5U7us8.png)
+![Home Page](./assets/getstarted.gif)
 
 2.  **Enter Your Details:** - Fill in the required fields accurately:
 
@@ -30,7 +30,7 @@ Creating your account involves these steps:
     - Confirm Password
     ```
 
-    ![EvOC Sign Up Form showing required fields](https://i.imgur.com/FMJtqPb.png)
+    ![EvOC Sign Up Form showing required fields](./assets/details.gif)
 
 3.  **Submit the Form:** - Click the **`Sign Up`** button.
 
@@ -44,14 +44,14 @@ Creating your account involves these steps:
 
     - Enter the 6-digit OTP code from the email into the verification screen on EvOC.
 
-    ![Entering the 6-digit OTP code received via email](https://i.imgur.com/IxK5LHo.png)
+    ![Entering the 6-digit OTP code received via email](./assets/image.png)
 
 5.  **Complete Registration:**
 
     - Click the **`Verify OTP`** button.
     - You should see a success message confirming your registration.
 
-    ![Confirmation message for successful registration](https://i.imgur.com/gSQlXE9.png)
+    ![Confirmation message for successful registration](./assets/confirmation.jpeg)
 
 **Success!** You now have an active EvOC account.
 
@@ -68,7 +68,7 @@ Accessing your account is straightforward:
 
     - Type in the `Email` (or `Username`) and `Password` you used during registration.
 
-    ![EvOC Login Page with fields for username/email and password](https://i.imgur.com/6BBx02U.png)
+    ![EvOC Login Page with fields for username/email and password](./assets/credentials.gif)
 
 3.  **Sign In:** - Click the **`Sign In`** button.
 
@@ -78,7 +78,7 @@ Accessing your account is straightforward:
 
 Upon successful login, you'll arrive at the main EvOC Dashboard. This is your starting point for creating, managing, and analyzing experiments.
 
-![The main EvOC Dashboard showing algorithm type selections](https://i.imgur.com/LI5S3zk.png)
+![The main EvOC Dashboard showing algorithm type selections](./assets/dashboard.jpeg)
 
 ---
 

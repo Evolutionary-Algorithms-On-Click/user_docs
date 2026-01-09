@@ -23,7 +23,7 @@ Follow these steps to set up and execute a DE algorithm:
 
     - This is the crucial step for DE. Within the configuration screen, specifically select **`de`** from the available "Algorithm Strategy" options.
 
-    ![Selecting the 'de' algorithm strategy within the EA configuration screen](https://i.imgur.com/HF06qQO.png)
+    ![Selecting the 'de' algorithm strategy within the EA configuration screen](./assets/de.png)
 
     ::: tip Key Step
     Selecting the **`de`** strategy is essential to activate the Differential Evolution specific logic and parameters.
@@ -58,7 +58,7 @@ The results interface for DE runs is similar to other traditional EAs:
 
 - Use the **`Share Run`** button to share the DE configuration and results with other EvOC users via email (comma-separate multiple addresses).
 
-    ![Sharing the run results via email addresses](https://i.imgur.com/US3uH0p.png)
+    ![Sharing the run results via email addresses](./assets/de_share.png)
 
 ### Viewing and Downloading Logs
 

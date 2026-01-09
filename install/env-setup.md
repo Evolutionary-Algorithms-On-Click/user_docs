@@ -7,10 +7,10 @@ description: Step-by-step guide to set up the environment for running EvOC local
 
 ## Docker Desktop
 
-1.  Install **Docker Desktop** from the [official website](https://www.docker.com/get-started/).
+1.  Install **Docker Desktop** from the [official website](./assets/docker_installation.gif).
 2.  Open **Docker Desktop** and update it to the latest version via **Settings → Software Updates**.
 
-![Docker Home page](https://i.imgur.com/5DU1pUZ.png)
+![Docker Home page](./assets/docker_installation.gif)
 
 ## Create a GMail Mailer Account
 
@@ -24,6 +24,6 @@ description: Step-by-step guide to set up the environment for running EvOC local
 1.  Download and install [Visual Studio Code](https://code.visualstudio.com/).
 2.  Install the **Docker extension** from Microsoft to manage services inside Docker using `.yml` files.
 
-![VS Code Docker Extension](https://i.imgur.com/4wMJyh6.png)
+![VS Code Docker Extension](./assets/vscode.gif)
 
 <!-- TODO: Docs about getting a free Gemini API key for AI Features. -->

@@ -13,7 +13,7 @@ Encountering problems? Here are solutions for some common issues you might face 
 
 After accessing the EvOC web application and clicking the **`Get Started`** or **`Sign Up`** button on the homepage, you immediately see an error message, potentially similar to this:
 
-![Error message appearing shortly after clicking Get Started, possibly related to loading resources](https://i.imgur.com/XCiKGpB.png)
+![Error message appearing shortly after clicking Get Started, possibly related to loading resources](./user-guide/assets/error_message.png)
 
 ### Cause
 
@@ -34,7 +34,7 @@ Alternatively, you can try clearing your browser's cache specifically for the Ev
 
 If you are running EvOC via a **local installation** (using Docker, etc.), you might see error messages appear in the terminal window where you launched the EvOC services. These errors often mention failures to connect to or fetch required microservices. The application UI might fail to load certain parts or become unresponsive. An example might look like this:
 
-![Terminal output showing error messages related to fetching or connecting to microservices](https://i.imgur.com/1x4NVoa.png)
+![Terminal output showing error messages related to fetching or connecting to microservices](./user-guide/assets/microservices_error.png)
 
 ### Cause
 
