@@ -32,11 +32,6 @@ The `MAILER_EMAIL` and `MAILER_PASSWORD` fields should be populated with the ema
 Paste the following environment variables into the `.env` file:
 
 ```env
-RABBITMQ_URL = amqp://user:password@host.docker.internal:5672/
-RABBITMQ_USER = user
-RABBITMQ_PASSWORD = password
-RABBITMQ_QUEUE_NAME = task_queue
-
 MINIO_ENDPOINT = host.docker.internal:9000
 MINIO_ACCESS_KEY = minioadmin
 MINIO_SECRET_KEY = minioadmin
@@ -47,6 +42,11 @@ MAILER_PASSWORD = <mailer_pass>
 FRONTEND_URL = http://localhost:3000
 AUTH_HTTP_PORT = 5000
 AUTH_GRPC_PORT = 5001
+
+INIT_DB_FLAG = true
+
+REDIS_URL= redis://host.docker.internal:6379/0
+REDIS_QUEUE_NAME=task_queue
 
 RUNNER_CONTROLLER_HTTP_PORT = 5002
 AUTH_GRPC_ADDRESS = host.docker.internal:5001
@@ -60,8 +60,6 @@ NEXT_PUBLIC_MINIO_BASE_URL=http://localhost:9000
 NEXT_PUBLIC_AI=false
 GOOGLE_GENERATIVE_AI_API_KEY=<YOUR_GEMINI_API_KEY>
 ```
-
-![env-content](./assets/env_content.png)
 
 ## Run Services
 
